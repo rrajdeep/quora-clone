@@ -1,0 +1,48 @@
+
+.spaces-to-follow-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    background-color: #fff;
+    margin-top: 20px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.spaces-to-follow-div::-webkit-scrollbar {
+display: none;
+}
+
+
+.space-division {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #dee0e1;
+    text-align: left;
+    padding: 10px;
+}
+.space-top {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px; 
+}
+
+.space-heading {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.s-img-div {
+    width: 40px;
+    height: 40px;
+}
+
+.s-img-div img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 8px;
+}

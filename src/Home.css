@@ -1,0 +1,61 @@
+
+.quora-home {
+    display: block;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.q-b-border-box {
+    box-sizing: border-box;
+}
+
+.q-d-initial {
+    box-sizing: initial;
+    width: 1072px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px !important;
+    padding-bottom: 0px;
+    align-items: stretch;
+}
+
+.q-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.div1 {
+    box-sizing: border-box;
+    width: 160px;
+}
+
+.inside-div1 {
+    box-sizing: border-box;
+    height: calc(100vh - 80px);
+    position: sticky;
+    top: 80px;
+}
+
+.div2 {
+    box-sizing: border-box;
+    width: 570px;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+
+.div3 {
+    box-sizing: border-box;
+    width: 300px;
+    margin-left: 30px;
+    flex-shrink: 0;
+}
+
+.inside-div3 {
+    box-sizing: border-box;
+    height: calc(100vh - 80px);
+    position: sticky;
+    top: 80px;
+}

@@ -1,0 +1,222 @@
+
+.q-position-fixed {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    min-height: 50px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.q-width-1072 {
+    box-sizing: border-box;
+    max-width: 1072px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-bottom-style: solid grey;
+    border-width: 1px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 4%);
+}
+
+.logo {
+    /* display: flex; */
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100%;
+}
+.nav-icons-cntainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons {
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    width: 47px;
+    height: 50px;
+    text-align: center;
+    /* justify-content: space-around; */
+}
+
+.nav-icons:hover {
+    background-color: #f1f2f2;
+}
+
+.activeLink a {
+    color: #b92b27 !important;
+    /* border-bottom: 3px solid #b92b27; */
+}
+
+.activeLink + div {
+    background-color: #b92b27;
+}
+
+.nav-link-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.add-question-div {
+    display: flex;
+    margin-left: 10px;
+}
+
+.icon-bottom-div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    /* background-color: #b92b27; */
+}
+
+.input-box {
+    display: flex;
+    border-color: #dee0e1 !important;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
+    padding: 5px;
+}
+
+.input-box-inner {
+    display: flex;   
+}
+
+.search-icon-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.q-input {
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0px;
+    min-height: 26px;
+    height: unset;
+    outline: none;
+    border: none;
+}
+
+.quora-plus {
+    box-sizing: border-box;
+    border: 1px solid #dee0e1;
+    border-radius: 20px;
+    min-height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quora-plus-inner {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.quora-plus:hover {
+    background-color: #f1f2f2;
+}
+
+.nav-profile-div, .nav-globe {
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-question-div {
+    box-sizing: border-box;
+    border-radius: 24px;
+    position: relative;
+   
+}
+
+.add-question-inner {
+    display: inline-flex;
+    background-color: #b92b27ad;
+    border-radius: 24px !important;
+    justify-items: center;
+}
+
+.add-ques-separator {
+    box-sizing: border-box;
+    border-color: rgb(164, 38, 35);
+    height: 30px;
+    border-right: 1px;
+}
+.add-ques-btn {
+    height: 30px;
+    min-width: 30px;
+    padding: 0 10px;
+    position: relative;
+    border-width: 0;
+    outline: none;
+    background-color: #b92b27;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.aq-bn-left {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.aq-btn-right {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.add-ques-btn:hover {
+    background-color: #850c08;
+}
+
+/* .add-ques-btn-right {
+    height: 30px;
+    min-width: 30px;
+    padding: 0 10px;
+    position: relative;
+    border-width: 0;
+    outline: none;
+    background-color: #b92b27;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+} */
