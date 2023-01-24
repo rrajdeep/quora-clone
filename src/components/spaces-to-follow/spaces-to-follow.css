@@ -14,7 +14,6 @@
 display: none;
 }
 
-
 .space-division {
     display: flex;
     gap: 10px;
@@ -22,10 +21,12 @@ display: none;
     text-align: left;
     padding: 10px;
 }
+
 .space-top {
     text-align: left;
     font-size: 16px;
     font-weight: 600;
+    margin: 10px 5px;
     padding-left: 10px; 
 }
 
@@ -45,4 +46,8 @@ display: none;
     overflow: hidden;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.space-info {
+    font-size: 14px;
 }

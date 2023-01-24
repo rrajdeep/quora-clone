@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Space } from './components/spaces';
+import { Space } from './components/myspaces';
 import { Ques } from './components/ques-section';
 import { Post } from './components/posts';
 import { SpacesToFollow } from './components/spaces-to-follow';

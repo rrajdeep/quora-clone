@@ -1,7 +1,8 @@
 import React from "react";
-import { Space } from "./components/spaces";
+import { Space } from "./components/myspaces";
 import { Ques } from "./components/ques-section";
 import { Post } from "./components/posts";
+import { Feed } from "./components/feeds";
 import { SpacesToFollow } from "./components/spaces-to-follow";
 import "./Home.css";
 
@@ -17,7 +18,7 @@ export const Home = () => {
                     </div>
                     <div className="div2">
                         <Ques />
-                        <Post />
+                        <Feed />
                     </div>
                     <div className="div3">
                         <div className="inside-div3">

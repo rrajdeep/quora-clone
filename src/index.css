@@ -6,7 +6,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1f2f2;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
