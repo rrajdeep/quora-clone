@@ -27,17 +27,23 @@ display: none;
     font-size: 16px;
     font-weight: 600;
     margin: 10px 5px;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 .space-heading {
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.space-heading:hover {
+    text-decoration: underline;
 }
 
 .s-img-div {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .s-img-div img {

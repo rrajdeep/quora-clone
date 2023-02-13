@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineHome, AiOutlineEdit, AiOutlineBell, AiOutlineGlobal, AiOutlineDown, AiOutlineSearch, AiOutlineClose, AiOutlineCaretRight } from "react-icons/ai";
 import { FaRegListAlt } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import { BsPeople,BsImages } from "react-icons/bs";
-import {RxLetterCaseCapitalize } from "react-icons/rx";
+import { BsPeople, BsImages } from "react-icons/bs";
+import { RxLetterCaseCapitalize } from "react-icons/rx";
+import { SpacesToFollow } from "../spaces-to-follow";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -24,56 +25,60 @@ export const Navbar = () => {
                         <Link to="/"><img src="./images/quora-logo.png" alt="logo" /></Link>
                     </div>
                     <div className="nav-icons-cntainer">
-                        <div className="nav-icons" title="Home">
-                            <div className={`${activeLink === 'home' && 'activeLink'} home nav-link-div`} onClick={() => setActiveLink("home")}>
-                                <Link to="/" className="">
+                        <Link to="/">
+                            <div className="nav-icons" title="Home" onClick={() => setActiveLink("home")}>
+                                <div className={`${activeLink === 'home' && 'activeLink'} home nav-link-div`}>
                                     <div className={activeLink === 'home' ? 'activeLink' : 'link-icon-svg'}>
                                         <AiOutlineHome size={25}></AiOutlineHome>
                                     </div>
-                                </Link>
+                                </div>
+                                <div className="icon-bottom-div"></div>
                             </div>
-                            <div className="icon-bottom-div"></div>
-                        </div>
-                        <div className="nav-icons" title="Followings">
-                            <div className={`${activeLink === 'followings' && 'activeLink'} followings nav-link-div`} onClick={() => setActiveLink("followings")}>
-                                <Link to="/followings" className="">
+                        </Link>
+
+                        <Link to="/followings" className="">
+                            <div className="nav-icons" title="Followings"  onClick={() => setActiveLink("followings")}>
+                                <div className={`${activeLink === 'followings' && 'activeLink'} followings nav-link-div`}>
                                     <div className={activeLink === 'followings' ? 'activeLink' : 'link-icon-svg'}>
                                         <FaRegListAlt size={25}></FaRegListAlt>
                                     </div>
-                                </Link>
+                                </div>
+                                <div className="icon-bottom-div"></div>
                             </div>
-                            <div className="icon-bottom-div"></div>
-                        </div>
-                        <div className="nav-icons" title="Answer">
-                            <div className={`${activeLink === 'answer' && 'activeLink'} answer nav-link-div`} onClick={() => setActiveLink("answer")}>
-                                <Link to="/answer">
+                        </Link>
+
+                        <Link to="/answer">
+                            <div className="nav-icons" title="Answer" onClick={() => setActiveLink("answer")}>
+                                <div className={`${activeLink === 'answer' && 'activeLink'} answer nav-link-div`}>
                                     <div className={activeLink === 'answer' ? 'activeLink' : 'link-icon-svg'}>
                                         <AiOutlineEdit size={25}></AiOutlineEdit>
                                     </div>
-                                </Link>
+                                </div>
+                                <div className="icon-bottom-div"></div>
                             </div>
-                            <div className="icon-bottom-div"></div>
-                        </div>
-                        <div className="nav-icons" title="Spaces">
-                            <div className={`${activeLink === 'spaces' && 'activeLink'} spaces nav-link-div`} onClick={() => setActiveLink("spaces")}>
-                                <Link to="/spaces">
-                                    <div className={activeLink === 'spaces' ? 'activeLink' : 'link-icon-svg'}>
-                                        <BsPeople size={25}></BsPeople>
-                                    </div>
-                                </Link>
+                        </Link>
+
+                        <Link to="/spaces">
+                            <div className="nav-icons" title="Spaces" onClick={() => setActiveLink("spaces")}>
+                                <div className={`${activeLink === 'spaces' && 'activeLink'} spaces nav-link-div`}>
+                                        <div className={activeLink === 'spaces' ? 'activeLink' : 'link-icon-svg'}>
+                                            <BsPeople size={25}></BsPeople>
+                                        </div>
+                                </div>
+                                <div className="icon-bottom-div"></div>
                             </div>
-                            <div className="icon-bottom-div"></div>
-                        </div>
-                        <div className="nav-icons" title="Notifications">
-                            <div className={`${activeLink === 'notifications' && 'activeLink'} notifications nav-link-div`} onClick={() => setActiveLink("notifications")}>
-                                <Link to="/notifications">
+                        </Link>
+
+                        <Link to="/notifications">
+                            <div className="nav-icons" title="Notifications" onClick={() => setActiveLink("notifications")}>
+                                <div className={`${activeLink === 'notifications' && 'activeLink'} notifications nav-link-div`}>
                                     <div className={activeLink === 'notifications' ? 'activeLink' : 'link-icon-svg'}>
                                         <AiOutlineBell size={25}></AiOutlineBell>
                                     </div>
-                                </Link>
+                                </div>
+                                <div className="icon-bottom-div"></div>
                             </div>
-                            <div className="icon-bottom-div"></div>
-                        </div>
+                        </Link>
                     </div>
                     <div className="input-box" title="Search">
                         <div className="input-box-inner">
@@ -232,6 +237,12 @@ export const Navbar = () => {
                             </div>
                         }
                     </div>
+                </div>
+            }
+            {
+                activeLink === "spaces" &&
+                <div className="show-spaces">
+                    <SpacesToFollow></SpacesToFollow>
                 </div>
             }
         </div>

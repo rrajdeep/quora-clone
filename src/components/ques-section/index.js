@@ -145,7 +145,6 @@ export const Ques = () => {
                     </div>
                 </div>
             }
-
         </div>
     );
 }

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { CgProfile } from "react-icons/cg";
 import { RxDotsHorizontal } from "react-icons/rx";
-import { BsBellSlashFill, BsBellSlash } from "react-icons/bs";
+import { BsBellSlash } from "react-icons/bs";
+import { Currentnotification } from "./notification-component";
+import { notificationData } from "../data/mockdata";
 import "./notifications.css";
 
 export const Notifications = () => {
 
     const [actNotif, setActNotif] = useState("all-notifications");
-    const [markAsRead, setMarkAsRead] = useState(false);
 
     return (
         <div className="notifications-container">
@@ -111,35 +111,17 @@ export const Notifications = () => {
 
             {
                 actNotif === "all-notifications" &&
+                // <Currentnotification name="Notifications"></Currentnotification>
                 <div className="q-notification-box">
                     <div className="notif-header">
                         <div className="notif-name">Notifications</div>
                         <div className="notif-setting">Settings</div>
                     </div>
-                    <div className={`${markAsRead === true && "markRead"} notif-content`} onClick={() => setMarkAsRead(true)}>
-                        <div>
-                            <div className="notif-profile-div">
-                                <CgProfile size={20} />
-                            </div>
-                        </div>
-                        <div>
-                            <div className="notif-content-middle">
-                                <div className="">UNIQUE FACTS</div>
-                                <div className="">Posted by Sheila Lewis</div>
-                                <div className="">13m ago</div>
-                            </div>
-                            <div className="notif-info-div">
-                                <div className="notif-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="notif-right-menu">
-                            <div className="notif-menu-dots">
-                                <RxDotsHorizontal size={22} />
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        notificationData.map((ele, index) => {
+                            return <Currentnotification key={index} data={ele}></Currentnotification>
+                        })
+                    }
                 </div>
 
             }

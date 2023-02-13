@@ -2,7 +2,8 @@ import React from "react";
 import { Post } from "./post";
 import "./feed.css";
 
-import { feedData } from "../../mockdata";
+// import { feedData } from "../../mockdata";
+import { feedData } from "../data/mockdata";
 
 export const Feed = () => {
     return (

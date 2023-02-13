@@ -1,6 +1,7 @@
 import React from "react";
 import { BiUpvote, BiDownvote, BiRefresh, BiMessageRounded } from "react-icons/bi";
-import { feedData } from "../../mockdata";
+// import { feedData } from "../../mockdata";
+import { feedData } from "../data/mockdata";
 // import "./post.css";
 
 export const Post = (props) => {

@@ -1,12 +1,10 @@
 import React from "react";
-import { Space } from "./components/myspaces";
-import { Ques } from "./components/ques-section";
-import { Post } from "./components/posts";
-import { Feed } from "./components/feeds";
-import { SpacesToFollow } from "./components/spaces-to-follow";
-import "./Home.css";
+import { Space } from "../myspaces";
+import { Ques } from "../ques-section";
+import { Feed } from "../feeds";
+import "../home/home.css";
 
-export const Home = () => {
+export const Followings = () => {
     return (
         <div className="quora-home">
             <div className="q-b-border-box">
@@ -19,11 +17,6 @@ export const Home = () => {
                     <div className="div2">
                         <Ques />
                         <Feed />
-                    </div>
-                    <div className="div3">
-                        <div className="inside-div3">
-                            <SpacesToFollow />
-                        </div>
                     </div>
                 </div>
             </div>

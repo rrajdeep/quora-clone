@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { myspaces } from "../../mockdata";
+import { myspaces } from "../data/mockdata";
 import { Spacename } from "./space";
 import "./spaces.css";
 
@@ -34,9 +33,6 @@ export const Space = () => {
                 <span className="q-below-spaces">Your Ad Choices </span>
                 <span className="q-below-spaces">Grievence Officer </span>
             </div>
-            <Link to="/posts">Post</Link>
-            <Link to="/ques">Ques section</Link>
-            <Link to="/spaces-to-follow">Spaces to Follow</Link>
         </div>
     );
 }

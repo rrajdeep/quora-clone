@@ -25,6 +25,26 @@
     border-radius: 50%;
 }
 
+.follow-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2e69ff;
+    cursor: pointer;
+}
+
+.follow-text:hover {
+    text-decoration: underline;
+}
+
+.more {
+    display: inline-block;
+    color:#195faa;
+    padding-left: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgb(255 255 255 / 85%) -16px 0px 14px 6px !important;
+}
+
 .profile-info {
     text-align: left;
 }

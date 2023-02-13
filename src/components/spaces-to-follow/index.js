@@ -1,5 +1,5 @@
 import React from "react";
-import { spaceData } from "../../mockdata";
+import { spaceData } from "../data/mockdata";
 import { Qspace } from "./space-component";
 import './spaces-to-follow.css';
 
